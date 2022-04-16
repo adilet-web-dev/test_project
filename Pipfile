@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+factory-boy = "*"
+psycopg2-binary = "*"
+django-extensions = "*"
+python-dotenv = "*"
+dj-database-url = "*"
+ipython = "*"
+pillow = "*"
+gunicorn = "*"
+drf-nested-routers = "*"
+drf-yasg = "*"
+whitenoise = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
