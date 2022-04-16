@@ -29,7 +29,9 @@ class Subcategory(models.Model):
 class Announcement(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
-    date = models.DateField(auto_now_add=True)
+    date = models.DateField(auto_now_add=True, blank=True)
+    image = models.ImageField()
+
     subcategory = models.ForeignKey(
         Subcategory,
         on_delete=models.CASCADE,
