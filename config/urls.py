@@ -12,7 +12,7 @@ from . import settings
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("latest-announcements/", LatestAnnouncements.as_view())
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
 
 urlpatterns += swagger_urlpatterns
 urlpatterns += api_urlpatterns
